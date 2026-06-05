@@ -77,6 +77,22 @@ All keys behave normally. No remapping is active.
 
 ---
 
+#### Line Navigation
+| Key | Action |
+|---|---|
+| '0' | Line Home |
+| '4' | Line End | # NOT working not sure why yet...
+
+#### Clipboard Operations
+
+| Key | Action |
+|---|---|
+| 'x' | Cut |
+| 'y' | Copy |
+| 'p' | Paste |
+
+---
+
 ## Notes
 
 - The `*` (wildcard) prefix is used on all hotkeys so they fire regardless of held modifiers.
