@@ -28,25 +28,37 @@ SetCapsLockState "AlwaysOff"
     SetTimer(() => ToolTip(), -2000)
 }
 
-; ── Context: everything below only fires while Vim layer is active ────────
+; -- Context: everything below only fires while Vim layer is active --------
 #HotIf vimLayerActive
 
-; ── Escape → Alt+F4 ──────────────────────────────────────────────────────
+; -- Escape → Alt+F4 -------------------------------------------------------
 *Escape:: Send "!{F4}"
 
-; ── Arrow Movement ────────────────────────────────────────────────────────
+; -- Arrow Movement --------------------------------------------------------
 *h:: Send "{Blind}{Left}"
 *j:: Send "{Blind}{Down}"
 *k:: Send "{Blind}{Up}"
 *l:: Send "{Blind}{Right}"
 
-; ── Word Navigation ───────────────────────────────────────────────────────
+; -- Word Navigation -------------------------------------------------------
 *w:: Send "{Blind}^{Right}"
 *b:: Send "{Blind}^{Left}"
 
-; ── Page Navigation ───────────────────────────────────────────────────────
+; -- Page Navigation -------------------------------------------------------
 *u:: Send "{Blind}{PgUp}"
 *d:: Send "{Blind}{PgDn}"
 
-; ── End context ───────────────────────────────────────────────────────────
+; -- Line Home/End ---------------------------------------------------------
+*2:: Send "{Blind}{End}"
+*0:: Send "{Blind}{Home}"
+
+; -- Clipboard Operations --------------------------------------------------
+*x:: Send "{Blind}^x"    ; Cut
+*y:: Send "{Blind}^c"    ; Copy (yank)
+*p:: Send "{Blind}^v"    ; Paste (put)
+
+; -- Insert New Line -------------------------------------------------------
+*o:: Send "{Blind}{End}{Enter}"
+
+; -- End context ----------------------------------------------------------─
 #HotIf
