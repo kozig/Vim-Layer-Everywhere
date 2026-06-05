@@ -2,7 +2,7 @@
 
 ## About
 
-This AutoHotkey v2 script repurposes the CapsLock key as a toggle to activate a Vim-inspired keyboard layer. When the layer is active, common Vim-style navigation keys are available, and the Escape key is remapped to close the active window.
+This AutoHotkey v2 script repurposes the CapsLock key as a toggle to activate a Vim-like keyboard layer. When the layer is active, common Vim-like navigation keys are available, and the Escape key is remapped to close the active window.
 
 ---
 
