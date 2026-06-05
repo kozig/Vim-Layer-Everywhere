@@ -37,7 +37,7 @@ All keys behave normally. No remapping is active.
 
 | Key | Action |
 |---|---|
-| `Escape` | Sends `Alt+F4` — closes the active window |
+| `Escape` | Sends `Alt+F4` closes the active window |
 
 #### Arrow Movement
 
@@ -57,8 +57,8 @@ All keys behave normally. No remapping is active.
 
 | Key | Action |
 |---|---|
-| `w` | `Ctrl+Right` — Move to next word |
-| `b` | `Ctrl+Left` — Move to previous word |
+| `w` | `Ctrl+Right` Move to next word |
+| `b` | `Ctrl+Left`  Move to previous word |
 
 > Shift passthrough is supported:
 > - `Shift+w` → Select to next word
